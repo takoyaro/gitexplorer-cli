@@ -2,7 +2,6 @@
   "name": "gitexplorer-cli",
   "version": "0.0.0-development",
   "description": "A CLI-ported version of Git Explorer: Find the right commands you need without digging through the web.",
-  "main": "index.js",
   "scripts": {
     "postinstall": "node deps.mjs && tsc",
     "prepublish": "tsc",
