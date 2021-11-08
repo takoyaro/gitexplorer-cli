@@ -4,7 +4,7 @@
   "description": "A CLI-ported version of Git Explorer: Find the right commands you need without digging through the web.",
   "main": "index.js",
   "scripts": {
-    "preinstall": "node deps.mjs",
+    "postinstall": "node deps.mjs",
     "start": "tsc && cd package && node main.js",
     "semantic-release": "semantic-release"
   },
