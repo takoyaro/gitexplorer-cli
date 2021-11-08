@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node deps.mjs && tsc",
+    "prepublish": "tsc",
     "start": "tsc && cd package && node main.js",
     "semantic-release": "semantic-release"
   },
