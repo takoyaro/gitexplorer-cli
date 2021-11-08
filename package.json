@@ -1,6 +1,6 @@
 {
   "name": "gitexplorer-cli",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A CLI-ported version of Git Explorer: Find the right commands you need without digging through the web.",
   "scripts": {
     "postinstall": "node deps.mjs",
