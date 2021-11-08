@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2020"],
-    "paths": {"*":["./src/*.d.ts"]}
+    "paths": {"*":["./src/types/*.d.ts"]}
   }
 }
