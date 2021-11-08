@@ -1,5 +1,4 @@
 #! /usr/bin/env node
-
 import {primaryOptions} from './primary-options';
 import {secondaryOptions} from './secondary-options';
 import {tertiaryOptions} from './tertiary-options';
@@ -7,9 +6,8 @@ import {tertiaryOptions} from './tertiary-options';
 import {prompts} from 'prompts';
 import chalk from 'chalk';
 
-
 (async ()=>{
-    let opts:opts = {};
+    let opts:IPickedOpts = {};
     const first = await prompts.select({
         type: 'select',
         name: 'value',
@@ -85,17 +83,19 @@ export type TPrimaryOption = {
     label:string,
     usage?:string,
     nb?:string
-  }
+};
   
 export type TBaseOptions = keyof typeof secondaryOptions;
 export type TSecondaryOptions = {
   [key in TBaseOptions]: TPrimaryOption[];
 };
+
 export type TOptions = keyof typeof tertiaryOptions;
 export type TTertiaryOptions = {
   [key in TOptions]: TPrimaryOption[];
 };
-interface opts{
+
+interface IPickedOpts{
     first?:TPrimaryOption,
     secondary?:TPrimaryOption,
     tertiary?:TPrimaryOption
