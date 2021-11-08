@@ -4,7 +4,7 @@
   "description": "A CLI-ported version of Git Explorer: Find the right commands you need without digging through the web.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node deps.mjs",
+    "postinstall": "node deps.mjs && tsc",
     "start": "tsc && cd package && node main.js",
     "semantic-release": "semantic-release"
   },
@@ -20,7 +20,8 @@
     "@semantic-release/release-notes-generator": "^10.0.2",
     "@types/prompts": "^2.0.14",
     "chalk": "^4.1.2",
-    "semantic-release": "^18.0.0"
+    "semantic-release": "^18.0.0",
+    "typescript": "^4.4.4"
   },
   "bin": {
     "gitx": "package/main.js"
