@@ -18,5 +18,8 @@
     "@types/node": "^16.11.6",
     "@types/prompts": "^2.0.14",
     "chalk": "^4.1.2"
+  },
+  "bin": {
+    "gitx": "package/main.js"
   }
 }

@@ -30,4 +30,3 @@ export const primaryOptions = options.sort((x, y) => {
   }
   return 0;
 });
-
