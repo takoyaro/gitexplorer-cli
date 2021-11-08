@@ -1,23 +1,28 @@
 {
   "name": "gitexplorer-cli",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0-development",
+  "description": "A CLI-ported version of Git Explorer: Find the right commands you need without digging through the web.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "node deps.mjs",
-    "start": "tsc && cd package && node main.js"
+    "start": "tsc && cd package && node main.js",
+    "semantic-release": "semantic-release"
   },
-  "author": "",
+  "author": "takoyaro",
   "license": "ISC",
   "dependencies": {
     "prompts": "^2.4.2"
   },
   "devDependencies": {
     "@types/prompts": "^2.0.14",
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "semantic-release": "^18.0.0"
   },
   "bin": {
     "gitx": "package/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takoyaro/gitexplorer-cli.git"
   }
 }
