@@ -11,6 +11,7 @@
   "author": "takoyaro",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "^3.0.0",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
